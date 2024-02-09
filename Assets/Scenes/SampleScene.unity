@@ -123,6 +123,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &263693500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263693502}
+  - component: {fileID: 263693501}
+  m_Layer: 0
+  m_Name: Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &263693501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263693500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0d7d2b0eeee844d8651de3fb568f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - parentName: BulletPool
+    prefab: {fileID: 395918006622832383, guid: e0ac454a6094d1e438fae7dc0d349fb3, type: 3}
+    poolSize: 20
+    pooledObjects: []
+  - parentName: GranadaPool
+    prefab: {fileID: 395918006622832383, guid: 10889dd108fbd3f4b885670df1d00ace, type: 3}
+    poolSize: 10
+    pooledObjects: []
+--- !u!4 &263693502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263693500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3873823, y: 0.423589, z: -4.532277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339174952
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 339174952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7334858, z: 0, w: 0.67970484}
-  m_LocalPosition: {x: -1.2, y: -0.28, z: -1.58}
+  m_LocalPosition: {x: -1.32, y: 0.05, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -462,7 +515,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunPosition: {fileID: 339174953}
-  bulletPrefab: {fileID: 395918006622832383, guid: e0ac454a6094d1e438fae7dc0d349fb3, type: 3}
 --- !u!1 &1792006417
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,3 +735,4 @@ SceneRoots:
   - {fileID: 1792006421}
   - {fileID: 1589267672}
   - {fileID: 2121505643}
+  - {fileID: 263693502}

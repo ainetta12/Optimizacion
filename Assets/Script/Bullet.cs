@@ -20,6 +20,6 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision colision)
     {
-        Destroy(this.gameObject);
+        gameObject.SetActive(false);
     }
 }
